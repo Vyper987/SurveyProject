@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+<head>
+  <title>Survey Form</title>
+<h1 id="title">Survey Form</h1>
+</head>
+<body>
+  <p id="description">Would you please fill out this survey so that we know where we can improve and what we are currently doing well?</p>
+  
+  <form id="survey-form">
+    <div>
+      <label id="name-label" for="name">
+        <p>Name</p>
+        <input id="name" type="text" required placeholder="Name" />
+      </label>
+    </div>
+    <div>
+      <label id="email-label" for="email">
+        <p>Email</p>
+        <input id="email" type="email" required placeholder="Email"/>
+      </label>
+    </div>
+    <div>
+      <label id="number-label" for="number">
+        <p>Age</p>
+        <input id="number" type="number" placeholder="Age" max="120" min="18"/>
+      </label>
+    </div>
+    <div id="radio-buttons">
+      <label>
+        <p>Would you recommend?</p>
+        <input type="radio" value="yes" name="group1" /> Yes
+      </label>
+      <label>
+        <input type="radio" value="no" name="group1"/> No
+      </label>
+      <label>
+        <input type="radio" value="i-dont-know" name="group1"/> I dont know
+      </label>
+    </div>
+    <div>
+      <label>
+        <p>What did you enjoy?</p>
+        <select id="dropdown">
+          <option></option>
+          <option>Food</option>
+          <option>Service</option>
+          <option>Other</option>
+        </select>
+      </label>
+    </div>
+    <div>
+      <label>
+        <p>What would you like to see improved?</p>
+        <input type="checkbox" value="Food" /> Food
+        <input type="checkbox" value="Service" /> Service
+        <input type="checkbox" value="Other" /> Other
+      </label>
+    </div>
+    <div>
+      <label>
+        <p>Any comments or suggestions?</p>
+        <textarea placeholder="enter your comments here..." cols="25" rows="5"></textarea>
+      </label>
+    </div>
+    <div>
+      <label>
+        <input id="submit" type="submit">
+      </label>
+    </div>
+  </form>
+</body>
+</html>
